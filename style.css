@@ -62,7 +62,7 @@ header {
     justify-self: center;
     align-items: center;
     background: var(--cor-fundo-apresentacao);
-    padding: 35px;
+    padding: 30px;
     flex-wrap: wrap;
     height: 100vh;  
 }
@@ -128,7 +128,7 @@ header {
 }
 
 article figcaption{
-    position: absolute;
+    position:absolute ;
     top: 0;
     color:rgb(255, 255, 255);
     width: 100%;
