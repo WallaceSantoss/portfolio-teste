@@ -1,4 +1,3 @@
-/* Adicione estas regras ao seu arquivo style.css */
 
 @charset "UTF-8";
 @font-face {
@@ -12,7 +11,7 @@
 :root {
     --cor-fundo-body: #000000ea; /* Fundo geral */
     --cor-fundo-header: #070707; /* Fundo do cabeçalho */
-    --cor-fundo-retangulo: #002739; /* Fundo dos retângulos */
+    --cor-fundo-retangulo: #000000; /* Fundo dos retângulos */
     --cor-fundo-apresentacao:#000000 ; /* Fundo da seção de apresentação */
     --cor-fundo-projetos: #000000; /* Fundo da seção de projetos */
     --cor-texto: #fff8f8; /* Cor do texto principal */
@@ -31,10 +30,19 @@ body {
     color: var(--cor-texto);
     font-family: Arial, sans-serif;
 }
+/*-------------------FIM--------------------*/
 
+
+
+
+/*-------------------CABECALHO--------------------*/
 header {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background-color: var(--cor-fundo-header);
+    background-image: url(img/grey-black-texture-concrete.jpg);
+    background-size: cover;
+    background-position: top;
     border-bottom: 5px solid rgb(232, 232, 232);
     width: 100%;
     font-size: 16px;
@@ -42,8 +50,12 @@ header {
     font-family: "Roboto Mono", monospace;
     padding: 10px;
 }
+/*-------------------FIM--------------------*/
 
 
+
+
+/*-------------------RETANGULOS--------------------*/
 .retangulo {
     background-color: var(--cor-fundo-retangulo);
     width: 100%;
@@ -55,13 +67,21 @@ header {
     font-size: 1.4em;
     padding: 5px;
 }
+/*-------------------FIM--------------------*/
 
+
+
+
+/*-------------------APRESENTAÇÃO--------------------*/
 .apresentaçao {
     display: flex;
     justify-content: center;
     justify-self: center;
     align-items: center;
-    background: var(--cor-fundo-apresentacao);
+    background-image: url(img/cyber-security-expert-working-with-technology-neon-lights.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 30px;
     flex-wrap: wrap;
     height: 100vh;  
@@ -82,9 +102,10 @@ header {
 }
 .imagemperfil{
     height: 200px;
-    background: #05618b;
+    background: #0000006f;
     border-radius: 50%;
     margin-top: 15px;
+    border: 5px solid white;
 }
 
 .apresentaçao section {
@@ -94,16 +115,16 @@ header {
     text-align: justify;
     line-height: 1.5;
     margin: 50px;
+    background-color: #000000a3;
+    border: 2px solid white;
    
 }
-.apresentaçao section p:hover{
-    background: #000000;
-    color: white;
-    transition: 0.5s;
-}
+/*-------------------FIM--------------------*/
 
 
 
+
+/*-------------------PROJETOS--------------------*/
 .projetos{
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +139,14 @@ header {
     margin: 10px;
     border: 5px solid rgb(19, 103, 139);
 }
+#BACK-END{
+    background-image: url(img/v627-aew-01-technologybackground.jpg);
+    background-size: cover;
+}
+#FRONT-END{
+    background-image: url(img/v627-aew-01-technologybackground.jpg);
+    background-size: cover;
+}
 #icone{
     display: inline;
     width: 20px;
@@ -126,8 +155,14 @@ header {
     border: none;
     opacity: 0;
 }
+/*-------------------FIM--------------------*/
 
+
+
+
+/*-------------------PROJETOS-DESC--------------------*/
 article figcaption{
+    display: none;
     position:absolute ;
     top: 0;
     color:rgb(255, 255, 255);
@@ -141,24 +176,31 @@ article figcaption{
 }
 figure{
     position: relative;
+    font-size: 12px;
 }  
 figure:hover figcaption {
+    display: block;
     opacity: 1;
-   
+    background:rgba(50, 50, 50, 0.827);
+    width: 95%;
+    height: 100%;
+    left: 10px;
 }
 figure:hover img{
-    transition: 0.9s;
-    opacity: 0.1;
-    margin: 20px;
+    width: 95%;
  
 }
 figure:hover #icone{
     opacity: 1;
     margin: 0px;
- 
-}
+   
+ }
+/*-------------------FIM--------------------*/
 
 
+
+
+/*-------------------BOTÃO--------------------*/
 button{
     background-color: var(--cor-fundo-projetos);
     color: white;
@@ -173,10 +215,12 @@ button a{
     color: #ffffff;
     font-family: "Roboto Mono", monospace;
 }
+/*-------------------FIM--------------------*/
 
 
 
 
+/*-------------------CONTATOS--------------------*/
 .contatos {
     columns: 4;
     margin: 20px auto; /* Centraliza horizontalmente */
@@ -204,11 +248,5 @@ button a{
     font-size: 14px;
     margin: 5px;
 }
+/*-------------------FIM--------------------*/
 
-
-.site img{
-    width: 300px;
-    height: 300px;
-    background-color: #ffffff;
-    
-}
